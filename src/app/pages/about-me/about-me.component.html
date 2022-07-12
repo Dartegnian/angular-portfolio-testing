@@ -1,0 +1,18 @@
+<div class="nav-listener-item nav-listener-item--red">
+	{{ navItem['name'] }}
+
+	<header class="nav-header">
+		<h1>About Me</h1>
+		<img src="/assets/img/me.jpg" class="nav-header__image" />
+	</header>
+	
+	<nav class="nav-listener-item__nav">
+		<ul class="nav-listener-item__list">
+			<li><button (click)="changeAboutList('hobbies')" class="nav-listener-item__button">Hobbies</button></li>
+			<li><button (click)="changeAboutList('skills')" class="nav-listener-item__button">Skills</button></li>
+		</ul>
+	</nav>
+	
+	<app-about-me-hobbies-skills [selectedList]="selectedAboutList">
+	</app-about-me-hobbies-skills>
+</div>

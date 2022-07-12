@@ -1,0 +1,17 @@
+<main>
+	<header>
+		<nav>
+			<ul class="nav-links">
+				<li *ngFor="let item of navItemsArray">
+					<button (click)="linkClick(item)">
+						{{ item["name"] }}
+					</button>
+				</li>
+			</ul>
+		</nav>
+	</header>
+
+	<app-hero-banner></app-hero-banner>
+
+	<router-outlet></router-outlet>
+</main>

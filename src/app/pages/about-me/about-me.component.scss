@@ -1,0 +1,31 @@
+.nav-listener-item {
+	height: 400px;
+	width: 600px;
+
+	&--red {
+		background-color: red;
+		color: white;
+	}
+
+	&__list {
+		display: flex;
+		list-style: none;
+	}
+
+	&__button {
+		background-color: white;
+		color: black;
+		border: none;
+		margin-right: 2rem;
+	}
+}
+
+.nav-header {
+	display: flex;
+	flex-direction: column;
+
+	&__image {
+		width: 25%;
+		align-self: end;
+	}
+}

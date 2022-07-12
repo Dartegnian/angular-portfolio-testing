@@ -1,0 +1,17 @@
+<div class="about-me-hobbies-skills">
+	<p>{{ selectedList }}</p>
+
+	<ul *ngIf="selectedList === 'hobbies'">
+		<li *ngFor="let hobby of hobbies">
+			{{ hobby }}
+		</li>
+	</ul>
+
+	<ul *ngIf="selectedList === 'skills'">
+		<li *ngFor="let skill of skills">
+			{{ skill }}
+		</li>
+	</ul>
+
+	<img [src]="'/assets/img/' + selectedList + '.jpg'" />
+</div>
